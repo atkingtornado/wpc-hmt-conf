@@ -1,0 +1,194 @@
+{
+	"models": {
+		"GFS": {
+			"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/GFS/gfs_",
+			"run_hrs": ["00","06","12","18"],
+			"num_fcst_hrs": 84,
+			"parameters": {
+				"QPF": {
+					"precip1": {"label": "1hr QPF", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"precip3": {"label": "3hr QPF", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"precip6": {"label": "6hr QPF", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"precip20": {"label": "20hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 24},
+					"precip24": {"label": "24hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},	
+				"QPF Exceedance of ARI": {
+					"ari1": {"label": "QPF Exceedance of 1hr ARI", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"ari3": {"label": "QPF Exceedance of 3hr ARI", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"ari6": {"label": "QPF Exceedance of 6hr ARI", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"ari24": {"label": "QPF Exceedance of 24hr ARI", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"mari6day1": {"label": "Max QPF Exceedance of 6hr ARI for Day 1", "min_fcst_hr": 24, "fcst_hr_step": 24},
+					"mari6day2": {"label": "Max QPF Exceedance of 6hr ARI for Day 1", "min_fcst_hr": 48, "fcst_hr_step": 24}
+				},
+				"QPF Duration": {
+					"duration6": {"label": "Duration of 1h QPF >= 0.25in/hr in the 6h period", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"duration24": {"label": "Duration of 1h QPF >= 0.25in/hr in the 24h period", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"Reflectivity": {
+					"refc1": {"label": "Composite Reflectivity", "min_fcst_hr": 0, "fcst_hr_step": 1}
+				},
+				"Synoptic": {
+					"tmpc": {"label": "2m Temperature in C with MSLP", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"td": {"label": "2m Dewpoint in C", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"pwat": {"label": "Hourly Precipitable Water", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing850": {"label": "850mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing700": {"label": "700mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"vort500": {"label": "500mb Heights and Absolute Vorticity", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"wind300": {"label": "300mb Heights and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"ivt": {"label": "Integrated Vapor Transport (IVT)", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"arscale": {"label": "Atmo. River Scale", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"Winter": {
+					"snow1": {"label": "1 hr Snowfall", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"snow3": {"label": "3 hr Snowfall", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"snow6": {"label": "6 hr Snowfall", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"snow24": {"label": "24 hr Snowfall", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"ptype": {"label": "Hourly Precipitation Type", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Verification": {
+					"precip6v": {"label": "Verification 6 hr QPF", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"precip24v": {"label": "Verification 24 hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				}
+			}
+		},
+		"NAMnest": {
+			"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/NAM/nam_",
+			"num_fcst_hrs": 60,
+			"run_hrs": ["00","06","12","18"],
+			"parameters": {
+				"QPF": {
+					"precip1": {"label": "1hr QPF", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"precip3": {"label": "3hr QPF", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"precip6": {"label": "6hr QPF", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"precip20": {"label": "20hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 24},
+					"precip24": {"label": "24hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"QPF Exceedance of ARI": {
+					"ari1": {"label": "QPF Exceedance of 1hr ARI", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"ari3": {"label": "QPF Exceedance of 3hr ARI", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"ari6": {"label": "QPF Exceedance of 6hr ARI", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"ari24": {"label": "QPF Exceedance of 24hr ARI", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"mari6day1": {"label": "Max QPF Exceedance of 6hr ARI for Day 1", "min_fcst_hr": 24, "fcst_hr_step": 24},
+					"mari6day2": {"label": "Max QPF Exceedance of 6hr ARI for Day 1", "min_fcst_hr": 48, "fcst_hr_step": 24}
+				},
+				"QPF Duration": {
+					"duration6": {"label": "Duration of 1h QPF >= 0.25in/hr in the 6h period", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"duration24": {"label": "Duration of 1h QPF >= 0.25in/hr in the 24h period", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"Precipitation Rate": {
+					"pmax": {"label": "Hourly Max Rain Rate", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Reflectivity": {
+					"refc1": {"label": "Composite Reflectivity", "min_fcst_hr": 0, "fcst_hr_step": 1},
+					"refl1": {"label": "1 hr Reflectivity at 1 km", "min_fcst_hr": 0, "fcst_hr_step": 1}
+				},
+				"Severe": {
+					"uh": {"label": "Hourly Min/Max Updraft Helicity", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"cape": {"label": "Hourly MU CAPE", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Synoptic": {
+					"tmpc": {"label": "2m Temperature in C with MSLP", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"td": {"label": "2m Dewpoint in C", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"pwat": {"label": "Hourly Precipitable Water", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing850": {"label": "850mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing700": {"label": "700mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"vort500": {"label": "500mb Heights and Absolute Vorticity", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"wind300": {"label": "300mb Heights and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Winter": {
+					"snow1": {"label": "1 hr Snowfall", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"snow3": {"label": "3 hr Snowfall", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"snow6": {"label": "6 hr Snowfall", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"snow24": {"label": "24 hr Snowfall", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"ptype": {"label": "Hourly Precipitation Type", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Verification": {
+					"precip24v": {"label": "Verification 24 hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				}
+			}	
+		},
+		"HRRR": {
+			"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/HRRR/hrrr_",
+			"num_fcst_hrs": 48,
+			"run_hrs": ["00","06","12","18"],
+			"parameters": {
+				"QPF": {
+					"precip1": {"label": "1hr QPF", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"precip3": {"label": "3hr QPF", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"precip6": {"label": "6hr QPF", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"precip20": {"label": "20hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 24},
+					"precip24": {"label": "24hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"QPF Exceedance of ARI": {
+					"ari1": {"label": "QPF Exceedance of 1hr ARI", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"ari3": {"label": "QPF Exceedance of 3hr ARI", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"ari6": {"label": "QPF Exceedance of 6hr ARI", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"ari24": {"label": "QPF Exceedance of 24hr ARI", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"mari6day1": {"label": "Max QPF Exceedance of 6hr ARI for Day 1", "min_fcst_hr": 24, "fcst_hr_step": 24}
+				},
+				"QPF Duration": {
+					"duration6": {"label": "Duration of 1h QPF >= 0.25in/hr in the 6h period", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"duration24": {"label": "Duration of 1h QPF >= 0.25in/hr in the 24h period", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				},
+				"Precipitation Rate": {
+					"prate": {"label": "Hourly Instantaneous Precipitation Rate", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Reflectivity": {
+					"refc1": {"label": "Composite Reflectivity", "min_fcst_hr": 0, "fcst_hr_step": 1},
+					"refl1": {"label": "1 hr Reflectivity at 1 km", "min_fcst_hr": 0, "fcst_hr_step": 1}
+				},
+				"Severe": {
+					"uh": {"label": "Hourly Min/Max Updraft Helicity", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"cape": {"label": "Hourly MU CAPE", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Synoptic": {
+					"tmpc": {"label": "2m Temperature in C with MSLP", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"td": {"label": "2m Dewpoint in C", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"pwat": {"label": "Hourly Precipitable Water", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing850": {"label": "850mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"mixing700": {"label": "700mb Heights, Mixing Ratio, Temperature and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"vort500": {"label": "500mb Heights and Absolute Vorticity", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"wind300": {"label": "300mb Heights and Winds", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Winter": {
+					"snow1": {"label": "1 hr Snowfall", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"snow3": {"label": "3 hr Snowfall", "min_fcst_hr": 3, "fcst_hr_step": 1},
+					"snow6": {"label": "6 hr Snowfall", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"snow24": {"label": "24 hr Snowfall", "min_fcst_hr": 24, "fcst_hr_step": 6},
+					"les": {"label": "1 hr Lake Effect Snowfall", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"ptype": {"label": "Hourly Precipitation Type", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"frz": {"label": "Freezing Level", "min_fcst_hr": 1, "fcst_hr_step": 1},
+					"dgz": {"label": "Dendritic Growth Zone", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				},
+				"Verification": {
+					"precip6v": {"label": "Verification 6 hr QPF", "min_fcst_hr": 6, "fcst_hr_step": 1},
+					"precip24v": {"label": "Verification 24 hr QPF", "min_fcst_hr": 24, "fcst_hr_step": 6}
+				}
+			}	
+		}
+	},
+	"ensembles_PQPF": {
+		"HREF": {
+			"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/HREF/href_",
+			"num_fcst_hrs": 48,
+			"run_hrs": ["00","06","12","18"],
+			"parameters": {
+				"QPF": {
+					"mean1": {"label": "1hr Mean", "min_fcst_hr": 1, "fcst_hr_step": 1}
+				}	
+			}
+		}
+	},
+	"obs_ero_ari_ffg": {
+		"Observations": {
+			"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/OBS/obs_",
+			"num_fcst_hrs": 83,
+			"run_hrs": ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
+			"parameters": {
+				"MRMS QPE Totals": {
+					"precip1": {"label": "MRMS Hourly Precipitation", "min_fcst_hr": 0, "fcst_hr_step": 1}
+				}	
+			}
+		}
+	}
+}
