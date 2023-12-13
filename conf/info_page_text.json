@@ -1,0 +1,9 @@
+{
+	"info_text": [
+		"<p>This is an experimental webpage that displays operational and experimental Models and Ensembles. This includes the Rapid Refresh Forecast System (RRFS) deterministic and ensemble data. Our website refers to the RRFS deterministic as RRFSp1, which EMC calls RRFSa. Experimental dataflow is sporadic, so if a model/ensemble is missing check to see if there is an earlier run. If the model/ensemble is still missing, we apologize and hope to have data available next time you visit.</p>",
+		"<p>The products shown on this webpage are <b>NOT</b> official NWS products. Information about WPC-HMT can be found <a href='https://www.wpc.ncep.noaa.gov/hmt/'>here</a>. <b>If you have any questions about the webpage or HMT please contact Sarah Trojniak (sarah.trojniak@noaa.gov) or Jimmy Correia (james.correia@noaa.gov).</b></p>",
+		"<p>If you are interested in other developmental websites we support please see the Experiment Websites - Data Visualization tab in the HMT and NOAA Websites dropdown. This includes an interactive soundings viewer that displays HRRR and RRFSp1 soundings.</p>",
+		"<p className='text-center'><b>Find the 2022 FFaIR Final Report <a href='https://www.wpc.ncep.noaa.gov/hmt/2022_FFaIR_Final_Report.pdf'>here</a> and the 2023 FFaIR Operations Plan <a href='https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/2023_FFaIR_Operations_Plan.pdf'>here</a>.</b></p>",
+		"<p className='text-center'><b>This year's FFaIR seminar slides can be found <a href='https://www.wpc.ncep.noaa.gov/hmt/hmt_webpages/seminars/2023/'>here</a>.</b></p>"
+	]
+}
