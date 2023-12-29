@@ -1,5 +1,5 @@
 {
-	"url_base": "https://origin.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/",
+	"url_base": "https://www.wpc.ncep.noaa.gov/hmt/hmt_webpages/images/",
 	"models": {
 		"GFS": {
 			"url_end": "GFS/gfs_",
